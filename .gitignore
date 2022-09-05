@@ -1,0 +1,39 @@
+# https://en.wikipedia.org/wiki/.DS_Store
+.DS_Store
+
+# ignore terraform files
+.terraform
+.terraform.lock.hcl
+*/**/.terraform
+
+*/**/*.pem
+
+*.tfstate
+*/**/*.tfstate
+
+*.tfstate.backup
+*/**/*.tfstate.backup
+
+*.tfvars
+*/**/*.tfvars
+
+# ignore intellij-idea related
+.idea
+*.iml
+
+# ignore .env file
+.env
+*/**/.env
+
+# ignore terraform plan output binary
+*.out
+*.out.json
+*/**/*.out
+*/**/*.out.json
+
+# ignore terraform.tfvars
+terraform.tfvars
+*/**/terraform.tfvars
+
+# IDE
+.vscode
