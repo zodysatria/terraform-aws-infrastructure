@@ -11,7 +11,7 @@ module "ec2" {
   project                     = "terraform"
   environment                 = "development"
   ami                         = "ami-08d4ac5b634553e16" #Ubuntu20
-  instance_type               = "t2.micro"
+  instance_type               = "t3.micro"
   vpc_name                    = "poc-vpc-terraform-zody"
   associate_public_ip_address = true
   volume_size                 = 8
