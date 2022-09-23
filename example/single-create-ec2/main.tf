@@ -1,6 +1,6 @@
 provider "aws" {
   version = "~> 3.0"
-  region  = "us-southeast-3"
+  region  = "ap-southeast-3"
   profile = "zodynoc1"
 }
 
@@ -9,8 +9,8 @@ module "ec2" {
 
   name                        = "example"
   project                     = "terraform"
-  environment                 = "development"
-  ami                         = "ami-08d4ac5b634553e16" #Ubuntu20
+  environment                 = "production"
+  ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
   instance_type               = "t3.micro"
   vpc_name                    = "vpc-example-terraform"
   associate_public_ip_address = true
