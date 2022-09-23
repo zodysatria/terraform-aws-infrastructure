@@ -1,6 +1,6 @@
 provider "aws" {
   version = "~> 3.0"
-  region  = "us-east-1"
+  region  = "ap-southeast-3"
 }
 
 module "ec2" {
@@ -9,10 +9,10 @@ module "ec2" {
   create                      = 2
   name                        = "terraform"
   project                     = "poc-priv"
-  environment                 = "development"
-  ami                         = "ami-0cabc39acf991f4f1" #Amazon Linux
+  environment                 = "production"
+  ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
   instance_type               = "t2.micro"
-  vpc_name                    = "poc-vpc-terraform-jody"
+  vpc_name                    = "vpc-example-terraform"
   associate_public_ip_address = false
   volume_size                 = 8
   user_data_file              = "setup.sh"
