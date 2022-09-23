@@ -1,18 +1,18 @@
 provider "aws" {
   version = "~> 3.0"
-  region  = "us-east-1"
+  region  = "us-southeast-3"
   profile = "zodynoc1"
 }
 
 module "ec2" {
   source = "git@github.com:zodysatria/terraform-aws-modules-ec2.git?ref=v0.0.1"
 
-  name                        = "zody"
+  name                        = "example"
   project                     = "terraform"
   environment                 = "development"
   ami                         = "ami-08d4ac5b634553e16" #Ubuntu20
-  instance_type               = "t2.micro"
-  vpc_name                    = "poc-vpc-terraform-zody"
+  instance_type               = "t3.micro"
+  vpc_name                    = "vpc-example-terraform"
   associate_public_ip_address = true
   volume_size                 = 8
   user_data_file              = "setup.sh"
