@@ -7,7 +7,7 @@ provider "aws" {
 module "ec2" {
   source = "git@github.com:zodysatria/terraform-aws-modules-ec2.git?ref=v0.0.1"
 
-  name                        = "erp-joy"
+  name                        = "erp"
   project                     = "terraform"
   environment                 = "production"
   ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
