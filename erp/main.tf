@@ -7,11 +7,11 @@ provider "aws" {
 module "ec2" {
   source = "git@github.com:zodysatria/terraform-aws-modules-ec2.git?ref=v0.0.1"
 
-  name                        = "example"
+  name                        = "pendul"
   project                     = "terraform"
-  environment                 = "production"
+  environment                 = "staging"
   ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
-  instance_type               = "t3.micro"
+  instance_type               = "t4.micro"
   vpc_name                    = "vpc-example-terraform"
   associate_public_ip_address = true
   volume_size                 = 8
