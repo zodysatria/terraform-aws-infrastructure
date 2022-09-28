@@ -9,7 +9,7 @@ module "ec2" {
 
   name                        = "erp"
   project                     = "terraform"
-  environment                 = "production"
+  environment                 = "staging"
   ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
   instance_type               = "t3.micro"
   vpc_name                    = "vpc-example-terraform"
