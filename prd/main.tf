@@ -11,7 +11,7 @@ module "ec2" {
   project                     = "terraform"
   environment                 = "production"
   ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
-  instance_type               = "t3.micro"
+  instance_type               = "t2.micro"
   vpc_name                    = "vpc-example-terraform"
   associate_public_ip_address = true
   volume_size                 = 8
