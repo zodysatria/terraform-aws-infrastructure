@@ -4,11 +4,11 @@ provider "aws" {
 }
 
 module "ec2" {
-  source = "../../"
+  source = "git@github.com:zodysatria/terraform-aws-modules-ec2.git?ref=v0.0.1"
 
   create                      = 2
-  name                        = "terraform"
-  project                     = "poc-priv"
+  name                        = "example"
+  project                     = "terraform"
   environment                 = "production"
   ami                         = "ami-06704743af22a1200" #Ubuntu 20.04
   instance_type               = "t2.micro"
